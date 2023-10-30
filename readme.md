@@ -15,36 +15,6 @@ Before we begin the analysis, we need to install and import necessary libraries 
 !pip install pydot
 ```
 
-    Requirement already satisfied: pm4py in /Users/philipempl/anaconda3/lib/python3.11/site-packages (2.7.8.1)
-    Requirement already satisfied: deprecation in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (2.1.0)
-    Requirement already satisfied: graphviz in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (0.20.1)
-    Requirement already satisfied: intervaltree in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (3.1.0)
-    Requirement already satisfied: lxml in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (4.9.3)
-    Requirement already satisfied: matplotlib in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (3.7.2)
-    Requirement already satisfied: networkx in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (3.1)
-    Requirement already satisfied: numpy in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (1.24.3)
-    Requirement already satisfied: pandas in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (2.0.3)
-    Requirement already satisfied: pydotplus in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (2.0.2)
-    Requirement already satisfied: pytz in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (2023.3.post1)
-    Requirement already satisfied: scipy in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (1.11.1)
-    Requirement already satisfied: stringdist in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (1.0.9)
-    Requirement already satisfied: tqdm in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (4.65.0)
-    Requirement already satisfied: cvxopt in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pm4py) (1.3.2)
-    Requirement already satisfied: packaging in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from deprecation->pm4py) (23.1)
-    Requirement already satisfied: sortedcontainers<3.0,>=2.0 in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from intervaltree->pm4py) (2.4.0)
-    Requirement already satisfied: contourpy>=1.0.1 in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from matplotlib->pm4py) (1.0.5)
-    Requirement already satisfied: cycler>=0.10 in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from matplotlib->pm4py) (0.11.0)
-    Requirement already satisfied: fonttools>=4.22.0 in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from matplotlib->pm4py) (4.25.0)
-    Requirement already satisfied: kiwisolver>=1.0.1 in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from matplotlib->pm4py) (1.4.4)
-    Requirement already satisfied: pillow>=6.2.0 in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from matplotlib->pm4py) (9.4.0)
-    Requirement already satisfied: pyparsing<3.1,>=2.3.1 in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from matplotlib->pm4py) (3.0.9)
-    Requirement already satisfied: python-dateutil>=2.7 in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from matplotlib->pm4py) (2.8.2)
-    Requirement already satisfied: tzdata>=2022.1 in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pandas->pm4py) (2023.3)
-    Requirement already satisfied: six>=1.5 in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from python-dateutil>=2.7->matplotlib->pm4py) (1.16.0)
-    Requirement already satisfied: graphviz in /Users/philipempl/anaconda3/lib/python3.11/site-packages (0.20.1)
-    Requirement already satisfied: pydot in /Users/philipempl/anaconda3/lib/python3.11/site-packages (1.4.2)
-    Requirement already satisfied: pyparsing>=2.1.4 in /Users/philipempl/anaconda3/lib/python3.11/site-packages (from pydot) (3.0.9)
-
 
 ### Python Libraries
 
@@ -94,9 +64,6 @@ from pm4py.visualization.graphs import visualizer as graphs_visualizer
 input_file = './opcua.json'
 
 ```
-
-    /Users/philipempl/anaconda3/lib/python3.11/site-packages/pm4py/visualization/decisiontree/__init__.py:23: UserWarning: The decisiontree visualizer will be removed in a future release (use Scikit Learn instead).
-      warnings.warn("The decisiontree visualizer will be removed in a future release (use Scikit Learn instead).")
 
 
 ## 2. Understanding the Network Traffic Data
@@ -613,7 +580,7 @@ pm4py.view_dfg(_df, _sa, _ea, format="png")
 
 
     
-![png](output_16_0.png)
+![png](resources/output_16_0.png)
     
 
 
@@ -634,7 +601,7 @@ pm4py.visualization.petri_net.visualizer.view(gviz)
 
 
     
-![png](output_18_0.png)
+![png](resources/output_18_0.png)
     
 
 
@@ -657,7 +624,7 @@ pm4py.visualization.petri_net.visualizer.view(gviz)
 
 
     
-![png](output_20_0.png)
+![png](resources/output_20_0.png)
     
 
 
@@ -688,7 +655,7 @@ pm4py.visualization.petri_net.visualizer.view(gviz)
 
 
     
-![png](output_22_1.png)
+![png](resources/output_22_1.png)
     
 
 
@@ -709,7 +676,7 @@ pm4py.view_bpmn(bpmn_model)
 
 
     
-![png](output_24_0.png)
+![png](resources/output_24_0.png)
     
 
 
@@ -909,7 +876,7 @@ plt.show()
 
 
     
-![png](output_31_1.png)
+![png](resources/output_31_1.png)
     
 
 
@@ -1507,19 +1474,19 @@ pm_quality_plot(alpha_data, "alpha")
 
 
     
-![png](output_43_0.png)
+![png](resources/output_43_0.png)
     
 
 
 
     
-![png](output_43_1.png)
+![png](resources/output_43_1.png)
     
 
 
 
     
-![png](output_43_2.png)
+![png](resources/output_43_2.png)
     
 
 
