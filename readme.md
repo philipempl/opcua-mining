@@ -580,7 +580,7 @@ pm4py.view_dfg(_df, _sa, _ea, format="png")
 
 
     
-![png](resources/output_16_0.png)
+![png](./resources/output_16_0.png)
     
 
 
@@ -601,7 +601,7 @@ pm4py.visualization.petri_net.visualizer.view(gviz)
 
 
     
-![png](resources/output_18_0.png)
+![png](./resources/output_18_0.png)
     
 
 
@@ -624,7 +624,7 @@ pm4py.visualization.petri_net.visualizer.view(gviz)
 
 
     
-![png](resources/output_20_0.png)
+![png](./resources/output_20_0.png)
     
 
 
@@ -655,7 +655,7 @@ pm4py.visualization.petri_net.visualizer.view(gviz)
 
 
     
-![png](resources/output_22_1.png)
+![png](./resources/output_22_1.png)
     
 
 
@@ -676,7 +676,7 @@ pm4py.view_bpmn(bpmn_model)
 
 
     
-![png](resources/output_24_0.png)
+![png](./resources/output_24_0.png)
     
 
 
@@ -876,7 +876,7 @@ plt.show()
 
 
     
-![png](resources/output_31_1.png)
+![png](./resources/output_31_1.png)
     
 
 
@@ -1474,19 +1474,19 @@ pm_quality_plot(alpha_data, "alpha")
 
 
     
-![png](resources/output_43_0.png)
+![png](./resources/output_43_0.png)
     
 
 
 
     
-![png](resources/output_43_1.png)
+![png](./resources/output_43_1.png)
     
 
 
 
     
-![png](resources/output_43_2.png)
+![png](./resources/output_43_2.png)
     
 
 
